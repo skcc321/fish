@@ -16,7 +16,7 @@ function fish_prompt --description 'Write out the prompt'
   set_color normal
 
   set_color --bold $fish_color_join
-  echo -n ' on '
+  echo -n ' in '
   set_color normal
 
   # PWD
