@@ -11,12 +11,12 @@ set -g fish_color_git_untracked yellow
 set -g fish_color_git_unmerged red
 
 set -g fish_prompt_git_status_added '✚ '
-set -g fish_prompt_git_status_modified ' '
+set -g fish_prompt_git_status_modified '✱ '
 set -g fish_prompt_git_status_renamed '➜ '
 set -g fish_prompt_git_status_copied '⇒ '
 set -g fish_prompt_git_status_deleted '✖ '
-set -g fish_prompt_git_status_untracked ' '
-set -g fish_prompt_git_status_unmerged ' '
+set -g fish_prompt_git_status_untracked '❓ '
+set -g fish_prompt_git_status_unmerged '❗ '
 
 set -g fish_prompt_git_status_order added modified renamed copied deleted untracked unmerged
 
@@ -34,7 +34,7 @@ function __extended_terlar --description 'Write out the git prompt'
 
   if test -z "$index"
     set_color --bold $fish_color_git_clean
-    echo -n $branch'✓'
+    echo -n $branch'✔'
     set_color normal
     return
   end
