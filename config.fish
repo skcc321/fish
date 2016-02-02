@@ -10,8 +10,9 @@ set fish_color_host 8224FF
 set fish_color_pwd FFAF0F
 set fish_color_join WHITE
 set fish_color_error 17C6FF
+set fish_color_autosuggestion 6F6F6F
+set fish_color_quote ffe808
+
 rvm default
 
 test $TERM != "screen"; and tmux
-
-
