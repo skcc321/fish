@@ -26,5 +26,6 @@ function fish_user_key_bindings
     end
 end
 
-source ~/.nvm-wrapper/nvm.fish
+source ~/.config/fish/nvm-wrapper/nvm.fish
 
+rvm default
